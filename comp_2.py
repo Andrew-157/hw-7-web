@@ -7,7 +7,7 @@ PORT = 55555
 with socket.socket() as sock:
     sock.connect((HOST, PORT))
     print("Connected to server...")
-    sock.sendall(b'Message')
+    sock.sendall(b'Message from computer 2')
     print("Message was sent")
 
     data = sock.recv(1024)
