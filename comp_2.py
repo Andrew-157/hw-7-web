@@ -8,7 +8,7 @@ with socket.socket() as sock:
     sock.connect((HOST, PORT))
     print("Connected to server...")
     sock.sendall(b'Message')
-    print("Client sent message")
+    print("Message was sent")
 
     data = sock.recv(1024)
 
